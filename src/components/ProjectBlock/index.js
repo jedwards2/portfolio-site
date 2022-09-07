@@ -7,7 +7,7 @@ function ProjectBlock({ project }) {
         {project.tech}
       </div>
       <div>
-        <img src={project.image} alt="honka" width="240px" height="130px" />
+        <img src={project.image} alt="honka" width="240px" height="140px" />
       </div>
     </div>
   );
