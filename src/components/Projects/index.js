@@ -8,7 +8,7 @@ function Projects() {
   ));
 
   return (
-    <div>
+    <div className="projects--div">
       <Header />
       {projects}
     </div>
