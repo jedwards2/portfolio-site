@@ -17,7 +17,7 @@ const info = [
     title: "Sequencer",
     link: "https://github.com/jedwards2/note-scroller",
     description: "Sequencer with React and Tonejs",
-    tech: [],
+    tech: ["React"],
     image: "/images/seq.gif",
   },
   {

@@ -8,9 +8,11 @@ function Projects() {
   ));
 
   return (
-    <div className="projects--div">
-      <Header />
-      {projects}
+    <div className="App">
+      <div className="projects--div">
+        <Header />
+        <div className="projects--main">{projects}</div>
+      </div>
     </div>
   );
 }

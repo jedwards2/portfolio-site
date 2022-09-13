@@ -1,13 +1,19 @@
 function ProjectBlock({ project }) {
+  let techs = project.tech.map((tech) => {
+    return <div>{tech}</div>;
+  });
+
   return (
-    <div>
-      <div>
+    <div className="project--block">
+      <div className="project--left">
         <a href={project.link}>{project.title}</a>
         {project.description}
-        {project.tech}
+        <p>Technologies used: {techs}</p>
       </div>
-      <div>
-        <img src={project.image} alt="honka" width="240px" height="140px" />
+      <div className="project--right">
+        <a href={project.link}>
+          <img src={project.image} alt="honka" />
+        </a>
       </div>
     </div>
   );
