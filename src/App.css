@@ -115,6 +115,8 @@ html, body {
   gap: 15px;
   width: 80%;
   justify-content: space-between;
+  color: lightgrey;
+  min-width: 650px;
 }
 
 .project--left {
@@ -126,10 +128,21 @@ html, body {
 }
 
 .project--right img {
-  width: 50vh;
+  max-width: 50vh;
 }
 
 .project--left a {
   font-size: 40px;
   color: white;
+}
+
+.profile--main {
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+}
+
+.profile--main p {
+  font-size: 25px;
+  text-align: center;
 }
