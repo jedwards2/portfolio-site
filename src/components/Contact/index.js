@@ -2,14 +2,18 @@ import Header from "../Header";
 
 function Contact() {
   return (
-    <div>
+    <div className="App">
       <Header />
-      <h3>Github Account:</h3>
-      <p>
-        <a href="https://github.com/jedwards2">https://github.com/jedwards2</a>
-      </p>
-      <h3>Email Me at: </h3>
-      <p>jack.morgan.edwards@gmail.com</p>
+      <div className="contact--div">
+        <div className="contact--square">
+          <h3>Github Account:</h3>
+          <a href="https://github.com/jedwards2">
+            <img src="/images/github.png" alt="hi" className="contact--img" />
+          </a>
+          <h3>Email Me at: </h3>
+          <p>jack.morgan.edwards@gmail.com</p>
+        </div>
+      </div>
     </div>
   );
 }
