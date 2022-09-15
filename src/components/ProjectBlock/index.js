@@ -12,7 +12,7 @@ function ProjectBlock({ project }) {
       </div>
       <div className="project--right">
         <a href={project.link}>
-          <img src={project.image} alt="honka" />
+          <img src={project.image} alt="project-img" />
         </a>
       </div>
     </div>
