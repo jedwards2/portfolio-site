@@ -10,7 +10,7 @@ function Contact() {
           <a href="https://github.com/jedwards2">
             <img
               src="/portfolio-site/images/github.png"
-              alt="hi"
+              alt="github link"
               className="contact--img"
             />
           </a>
