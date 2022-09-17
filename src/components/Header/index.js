@@ -27,9 +27,7 @@ function Header() {
         <h4>Jack Edwards</h4>
       </div>
       <div className="header-sub">
-        {pathname !== "/portfolio-site" && (
-          <NavLink to="/portfolio-site">About</NavLink>
-        )}
+        {pathname !== "/" && <NavLink to="/">About</NavLink>}
         {pathname !== "/projects" && <NavLink to="/projects">Projects</NavLink>}
         {pathname !== "/resume" && <NavLink to="/resume">Resume</NavLink>}
         {pathname !== "/contact" && <NavLink to="/contact">Contact</NavLink>}
