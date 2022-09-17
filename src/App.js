@@ -5,10 +5,9 @@ import { ThemeContext } from "./ThemeContext";
 import { useContext } from "react";
 
 function App() {
-  const theme = useContext(ThemeContext);
-
+  const { theme } = useContext(ThemeContext);
   return (
-    <div className="App">
+    <div className={`App ${theme ? "dark" : "light"}`}>
       <Header />
       <Profile />
     </div>

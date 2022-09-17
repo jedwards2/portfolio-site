@@ -1,7 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { useContext } from "react";
 import { ThemeContext } from "../../ThemeContext";
-
 function Header() {
   const location = useLocation();
   const pathname = location.pathname;
@@ -31,8 +30,19 @@ function Header() {
         {pathname !== "/projects" && <NavLink to="/projects">Projects</NavLink>}
         {pathname !== "/resume" && <NavLink to="/resume">Resume</NavLink>}
         {pathname !== "/contact" && <NavLink to="/contact">Contact</NavLink>}
-        <button type="button" onClick={(e) => handleClick(e)}>
-          {theme ? "Light" : "Dark"}
+        <button
+          className="header--button"
+          type="button"
+          onClick={(e) => handleClick(e)}
+        >
+          <img
+            src={
+              theme
+                ? "/portfolio-site/images/sun.png"
+                : "/portfolio-site/images/moon.png"
+            }
+            alt="theme"
+          ></img>
         </button>
       </div>
     </div>
