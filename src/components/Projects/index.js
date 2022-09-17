@@ -15,9 +15,22 @@ function Projects() {
 
   return (
     <div className={`App ${theme ? "dark" : "light"}`}>
+      <Header />
       <div className="projects--div">
-        <Header />
-        <div className="projects--main">{projects}</div>
+        <div className="projects--header">
+          <h1>Projects</h1>
+          <img src="/portfolio-site/images/max.png" alt="max-img"></img>
+        </div>
+        <div className="projects--info">
+          <p>
+            My projects use the latest technologies and intuitive design to
+            deliver the best user experience possible. You can find all of the
+            technologies I use commonly on my resume, but some of my favorites
+            include React, Node.js, Tone.js, and Max/MSP.
+          </p>
+        </div>
+
+        <div className="projects--list">{projects}</div>
       </div>
     </div>
   );

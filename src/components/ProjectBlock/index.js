@@ -4,17 +4,21 @@ function ProjectBlock({ project }) {
   });
 
   return (
-    <div className="project--block">
-      <div className="project--left">
-        <a href={project.link}>{project.title}</a>
-        {project.description}
-        <p>Technologies used: {techs}</p>
-      </div>
-      <div className="project--right">
-        <a href={project.link}>
-          <img src={project.image} alt="project-img" />
-        </a>
-      </div>
+    <div className="block--wrapper">
+      <a href={project.link}>
+        <div className="project--block">
+          <div className="project--left">
+            <h1>{project.title}</h1>
+            {project.description}
+            <p>Technologies used: {techs}</p>
+          </div>
+          <div className="project--right">
+            <a href={project.link}>
+              <img src={project.image} alt="project-img" />
+            </a>
+          </div>
+        </div>
+      </a>
     </div>
   );
 }
