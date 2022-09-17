@@ -3,6 +3,8 @@ import ProjectBlock from "../ProjectBlock";
 import info from "../../info";
 import { ThemeContext } from "../../ThemeContext";
 import { useContext } from "react";
+import "../../index.css";
+import "./projects.css";
 
 function Projects() {
   const projects = info.map((project) => (

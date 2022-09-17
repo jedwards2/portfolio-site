@@ -1,7 +1,7 @@
 import info from "../../info";
 import ProjectBlock from "../ProjectBlock";
 
-function Profile() {
+function ProfileContent() {
   const projects = info.map((project) => (
     <ProjectBlock project={project} key={project.title} />
   ));
@@ -19,4 +19,4 @@ function Profile() {
   );
 }
 
-export default Profile;
+export default ProfileContent;

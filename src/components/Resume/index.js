@@ -1,8 +1,14 @@
 import Header from "../Header";
+import { ThemeContext } from "../../ThemeContext";
+import { useContext } from "react";
+import "../../index.css";
+import "./resume.css";
 
 function Resume() {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <div>
+    <div className={`App ${theme ? "dark" : "light"}`}>
       <Header />
       <div className="resume">
         <div className="resume--header">

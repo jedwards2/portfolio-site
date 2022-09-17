@@ -1,8 +1,14 @@
 import Header from "../Header";
+import { ThemeContext } from "../../ThemeContext";
+import { useContext } from "react";
+import "../../index.css";
+import "./contact.css";
 
 function Contact() {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <div className="App">
+    <div className={`App ${theme ? "dark" : "light"}`}>
       <Header />
       <div className="contact--div">
         <div className="contact--square">

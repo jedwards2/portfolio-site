@@ -1,6 +1,9 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { useContext } from "react";
 import { ThemeContext } from "../../ThemeContext";
+import "../../index.css";
+import "./header.css";
+
 function Header() {
   const location = useLocation();
   const pathname = location.pathname;
@@ -38,8 +41,8 @@ function Header() {
           <img
             src={
               theme
-                ? "/portfolio-site/images/sun.png"
-                : "/portfolio-site/images/moon.png"
+                ? "/portfolio-site/images/moon.png"
+                : "/portfolio-site/images/sun.png"
             }
             alt="theme"
           ></img>

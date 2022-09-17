@@ -1,0 +1,36 @@
+.projects--main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.project--block {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 15px;
+  width: 80%;
+  justify-content: space-between;
+  color: lightgrey;
+  min-width: 650px;
+}
+
+.project--left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-size: 30px;
+}
+
+.project--right img {
+  max-width: 50vh;
+}
+
+.project--left a {
+  font-size: 40px;
+  color: white;
+}
