@@ -13,7 +13,7 @@ root.render(
   <ThemeProvider>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ProfilePage />}></Route>
+        <Route path="/portfolio-site" element={<ProfilePage />}></Route>
         <Route path="/projects" element={<Projects />}></Route>
         <Route path="/resume" element={<Resume />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
