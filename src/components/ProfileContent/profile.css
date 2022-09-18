@@ -29,7 +29,7 @@
   border-radius: 5px;
   color: white;
   background: none;
-  /* box-shadow: 10px 10px 8px #575757; */
+  box-shadow: 10px 10px 8px #575757;
   margin: 40px 0px;
   border: 1px solid white;
 }
@@ -59,7 +59,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* box-shadow: 10px 10px 8px #575757; */
+  box-shadow: 10px 10px 8px #575757;
   padding: 10px;
   border-radius: 25px;
   min-height: 300px;
