@@ -43,7 +43,17 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
+
 }
+
+.profile--projects--div a {
+  text-decoration: none;
+}
+
+.profile--projects--div p {
+  font-size: 28px;
+}
+
 
 .profile--project--pair {
   display: flex;
