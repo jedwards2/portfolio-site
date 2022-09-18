@@ -19,7 +19,7 @@ function Projects() {
       <div className="projects--div">
         <div className="projects--header">
           <h1>Projects</h1>
-          <img src="/portfolio-site/images/max.png" alt="max-img"></img>
+          <img src="/images/max.png" alt="max-img"></img>
         </div>
         <div className="projects--info">
           <p>

@@ -20,7 +20,7 @@ function Header() {
       <div className="header-sub">
         <a href="https://github.com/jedwards2">
           <img
-            src="/portfolio-site/images/github.png"
+            src="/images/github.png"
             alt="github link"
             width="25px"
             height="25px"
@@ -29,9 +29,7 @@ function Header() {
         <h4>Jack Edwards</h4>
       </div>
       <div className="header-sub">
-        {pathname !== "/portfolio-site/" && (
-          <NavLink to="/portfolio-site/">About</NavLink>
-        )}
+        {pathname !== "/" && <NavLink to="/">About</NavLink>}
         {pathname !== "/projects" && <NavLink to="/projects">Projects</NavLink>}
         {pathname !== "/resume" && <NavLink to="/resume">Resume</NavLink>}
         {pathname !== "/contact" && <NavLink to="/contact">Contact</NavLink>}
@@ -41,11 +39,7 @@ function Header() {
           onClick={(e) => handleClick(e)}
         >
           <img
-            src={
-              theme
-                ? "/portfolio-site/images/moon.png"
-                : "/portfolio-site/images/sun.png"
-            }
+            src={theme ? "/images/moon.png" : "/images/sun.png"}
             alt="theme"
           ></img>
         </button>
