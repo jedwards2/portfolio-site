@@ -18,7 +18,7 @@ function ProfileContent({ switchMain }) {
         </p>
       </div>
       <button
-        className="fade--in--1"
+        className="fade--in--1 contact--button"
         type="button"
         onClick={() => switchMain("CONTACT")}
       >
