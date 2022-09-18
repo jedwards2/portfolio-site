@@ -12,7 +12,6 @@
 }
 
 .project--block {
-  border: 1px solid white;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -21,6 +20,7 @@
   gap: 25px;
   justify-content: space-between;
   color: lightgrey;
+  border: 1px solid white;
 }
 
 .project--block h1 {
