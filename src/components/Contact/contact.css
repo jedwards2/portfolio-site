@@ -13,7 +13,7 @@
   flex-direction: column;
   align-items: center;
   border-color: white;
-  /* box-shadow: 10px 10px 8px #575757; */
+  box-shadow: 10px 10px 8px #575757;
 }
 
 .contact--img {

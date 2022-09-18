@@ -33,7 +33,7 @@
 
 .block--wrapper {
   text-decoration: none;
-  /* box-shadow: 10px 10px 8px #575757; */
+  box-shadow: 10px 10px 8px #575757;
   width: 100%;
   margin-bottom: 40px;
   min-width: 675px;
