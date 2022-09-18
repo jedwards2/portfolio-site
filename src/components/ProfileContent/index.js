@@ -21,6 +21,7 @@ function ProfileContent({ switchMain }) {
         className="fade--in--1 contact--button"
         type="button"
         onClick={() => switchMain("CONTACT")}
+        style={{ borderColor: "white" }}
       >
         Get in touch with me
       </button>
