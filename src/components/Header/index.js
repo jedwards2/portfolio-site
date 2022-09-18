@@ -3,7 +3,7 @@ import { ThemeContext } from "../../ThemeContext";
 import "../../index.css";
 import "./header.css";
 
-function Header({ switchMain }) {
+function Header({ main, switchMain }) {
   const { theme, setTheme } = useContext(ThemeContext);
 
   function handleClick(e) {
@@ -27,7 +27,7 @@ function Header({ switchMain }) {
             height="25px"
           />
         </a>
-        <h4>Jack Edwards</h4>
+        {main !== "ABOUT" ? <h4>Jack Edwards</h4> : <h4>About Me</h4>}
       </div>
       <div className="header-sub">
         <button type="button" onClick={(e) => handleNav(e, "ABOUT")}>
