@@ -1,3 +1,5 @@
+import "./profile.css";
+
 function ProfileContent() {
   return (
     <div className="profile--main">
@@ -24,22 +26,19 @@ function ProfileContent() {
         <a href="https://jedwards2.github.io/tone-physics-react/">
           <div className="profile--project--pair">
             <p>Musical Physics System</p>
-            <img
-              alt="project-img"
-              src="/portfolio-site/images/physics.gif"
-            ></img>
+            <img alt="project-img" src="/images/physics.gif"></img>
           </div>
         </a>
         <a href="https://jedwards2.github.io/note-scroller/">
           <div className="profile--project--pair">
             <p>In-Browser Sequencer</p>
-            <img alt="project-img" src="/portfolio-site/images/seq.gif"></img>
+            <img alt="project-img" src="/images/seq.gif"></img>
           </div>
         </a>
         <a href="https://jedwards2.github.io/automata_gen/">
           <div className="profile--project--pair">
             <p>Cellular Automata Rhythm Generator</p>
-            <img alt="project-img" src="/portfolio-site/images/auto.gif"></img>
+            <img alt="project-img" src="/images/auto.gif"></img>
           </div>
         </a>
       </div>

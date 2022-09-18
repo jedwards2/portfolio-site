@@ -1,18 +1,19 @@
-import { NavLink, useLocation } from "react-router-dom";
 import { useContext } from "react";
 import { ThemeContext } from "../../ThemeContext";
 import "../../index.css";
 import "./header.css";
 
-function Header() {
-  const location = useLocation();
-  const pathname = location.pathname;
+function Header({ switchMain }) {
   const { theme, setTheme } = useContext(ThemeContext);
 
   function handleClick(e) {
     e.preventDefault();
-    console.log(theme);
     setTheme((prevTheme) => !prevTheme);
+  }
+
+  function handleNav(e, location) {
+    e.preventDefault();
+    switchMain(location);
   }
 
   return (
@@ -29,20 +30,24 @@ function Header() {
         <h4>Jack Edwards</h4>
       </div>
       <div className="header-sub">
-        {pathname !== "/" && <NavLink to="/">About</NavLink>}
-        {pathname !== "/projects" && <NavLink to="/projects">Projects</NavLink>}
-        {pathname !== "/resume" && <NavLink to="/resume">Resume</NavLink>}
-        {pathname !== "/contact" && <NavLink to="/contact">Contact</NavLink>}
-        <button
-          className="header--button"
-          type="button"
-          onClick={(e) => handleClick(e)}
-        >
+        <button type="button" onClick={(e) => handleNav(e, "ABOUT")}>
+          About
+        </button>
+        <button type="button" onClick={(e) => handleNav(e, "PROJECTS")}>
+          Projects
+        </button>
+        <button type="button" onClick={(e) => handleNav(e, "RESUME")}>
+          Resume
+        </button>
+        <button type="button" onClick={(e) => handleNav(e, "CONTACT")}>
+          Contact
+        </button>
+        <div className="header--button" onClick={(e) => handleClick(e)}>
           <img
             src={theme ? "/images/moon.png" : "/images/sun.png"}
             alt="theme"
           ></img>
-        </button>
+        </div>
       </div>
     </div>
   );
