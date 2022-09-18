@@ -21,7 +21,7 @@ function App() {
       }
     >
       <Header main={main} switchMain={switchMain} />
-      {main === "ABOUT" && <ProfileContent />}
+      {main === "ABOUT" && <ProfileContent switchMain={switchMain} />}
       {main === "PROJECTS" && <Projects />}
       {main === "CONTACT" && <Contact />}
       {main === "RESUME" && <Resume />}

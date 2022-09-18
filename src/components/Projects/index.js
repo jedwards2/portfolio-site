@@ -10,11 +10,11 @@ function Projects() {
 
   return (
     <div className="projects--div">
-      <div className="projects--header">
+      <div className="projects--header fade--in--1">
         <h1>Projects</h1>
         <img src="/images/max.png" alt="max-img"></img>
       </div>
-      <div className="projects--info">
+      <div className="projects--info fade--in--1">
         <p>
           My projects use the latest technologies and intuitive design to
           deliver the best user experience possible. You can find all of the
@@ -23,7 +23,7 @@ function Projects() {
         </p>
       </div>
 
-      <div className="projects--list">{projects}</div>
+      <div className="projects--list fade--in--2">{projects}</div>
     </div>
   );
 }

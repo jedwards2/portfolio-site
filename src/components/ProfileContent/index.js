@@ -1,6 +1,7 @@
 import "./profile.css";
+import "../../index.css";
 
-function ProfileContent() {
+function ProfileContent({ switchMain }) {
   return (
     <div className="profile--main">
       <div className="profile--header fade--in--1">
@@ -16,7 +17,13 @@ function ProfileContent() {
           some of them!
         </p>
       </div>
-      <button className="fade--in--1">Get in touch with me</button>
+      <button
+        className="fade--in--1"
+        type="button"
+        onClick={() => switchMain("CONTACT")}
+      >
+        Get in touch with me
+      </button>
 
       <h1 className="fade--in--1">
         Quick links to some of my favorite Projects
