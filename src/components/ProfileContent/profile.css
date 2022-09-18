@@ -36,7 +36,7 @@
 }
 
 .profile--main button:hover {
-  background-color: rgb(113, 113, 113);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .profile--projects--div {
@@ -58,7 +58,7 @@
 }
 
 .profile--project--pair:hover {
-  background-color: rgb(113, 113, 113);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .profile--project--pair  img {

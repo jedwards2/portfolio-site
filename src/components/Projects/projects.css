@@ -40,7 +40,7 @@
 }
 
 .project--block:hover {
-  background-color: rgb(113, 113, 113);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .project--left {

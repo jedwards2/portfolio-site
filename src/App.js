@@ -12,7 +12,14 @@ function App() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className={`App ${theme ? "dark" : "light"}`}>
+    <div
+      className={`App ${theme ? "dark" : "light"}`}
+      style={
+        theme
+          ? { backgroundImage: "url(/images/dark_back.jpg)" }
+          : { backgroundImage: "url(/images/light_back.jpg)" }
+      }
+    >
       <Header main={main} switchMain={switchMain} />
       {main === "ABOUT" && <ProfileContent />}
       {main === "PROJECTS" && <Projects />}
