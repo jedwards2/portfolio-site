@@ -27,6 +27,14 @@ const info = [
     tech: [],
     image: "/images/weather.png",
   },
+  {
+    title: "Automata Generator",
+    link: "https://github.com/jedwards2/automata-max",
+    description:
+      "A Node for Max script used to compute rows of cellular auomata according to any rule between 1-127",
+    tech: [],
+    image: "/images/max.png",
+  },
 ];
 
 export default info;
