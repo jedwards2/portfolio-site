@@ -28,6 +28,13 @@ const info = [
     image: "/images/weather.png",
   },
   {
+    title: "Starmap",
+    link: "https://github.com/jedwards2/python-starmap",
+    description: "Website to find stars from the IAU Catalog in your sky",
+    tech: [],
+    image: "/images/starmap.png",
+  },
+  {
     title: "Automata Generator",
     link: "https://github.com/jedwards2/automata-max",
     description:

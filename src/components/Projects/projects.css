@@ -21,6 +21,7 @@
   justify-content: space-between;
   border: 1px solid white;
   border-color: white;
+  flex-wrap: wrap;
 }
 
 .project--block h1 {
@@ -36,7 +37,6 @@
   box-shadow: 10px 10px 8px #575757;
   width: 100%;
   margin-bottom: 40px;
-  min-width: 675px;
 }
 
 .project--block:hover {
@@ -49,10 +49,11 @@
   justify-content: center;
   text-decoration: none;
   font-size: 30px;
+  max-width: 50vh;
 }
 
 .project--right img {
-  max-width: 50vh;
+  width: 25vh;
   border-radius: 25px;
 }
 
