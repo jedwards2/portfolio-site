@@ -29,7 +29,7 @@ const info = [
   },
   {
     title: "Starmap",
-    link: "https://github.com/jedwards2/python-starmap",
+    link: "https://github.com/jedwards2/python_starmap",
     description: "Website to find stars from the IAU Catalog in your sky",
     tech: [],
     image: "/images/starmap.png",

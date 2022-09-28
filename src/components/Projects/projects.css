@@ -69,6 +69,8 @@
   font-size: 40px;
   gap: 40px;
   text-decoration: none;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .projects--header img{

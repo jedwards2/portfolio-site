@@ -1,10 +1,11 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../ThemeContext";
 import "../../index.css";
 import "./header.css";
 
-function Header({ main, switchMain }) {
+function Header({ main, switchMain, dropdown, setDropdown }) {
   const { theme, setTheme } = useContext(ThemeContext);
+  const [windowSize, setWindowSize] = useState(getWindowSize());
 
   function handleClick(e) {
     e.preventDefault();
@@ -15,6 +16,23 @@ function Header({ main, switchMain }) {
     e.preventDefault();
     switchMain(location);
   }
+
+  function getWindowSize() {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+  }
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
 
   return (
     <div className="header">
@@ -27,21 +45,34 @@ function Header({ main, switchMain }) {
             height="25px"
           />
         </a>
-        {main !== "ABOUT" ? <h4>Jack Edwards</h4> : <h4>About Me</h4>}
       </div>
       <div className="header-sub">
-        <button type="button" onClick={(e) => handleNav(e, "ABOUT")}>
-          About
-        </button>
-        <button type="button" onClick={(e) => handleNav(e, "PROJECTS")}>
-          Projects
-        </button>
-        <button type="button" onClick={(e) => handleNav(e, "RESUME")}>
-          Resume
-        </button>
-        <button type="button" onClick={(e) => handleNav(e, "CONTACT")}>
-          Contact
-        </button>
+        {windowSize.innerWidth <= 500 && (
+          <div onClick={() => setDropdown((prevState) => !prevState)}>
+            <img
+              src={dropdown ? "/images/up.png" : "/images/down.png"}
+              alt="down"
+              widht="25px"
+              height="25px"
+            ></img>
+          </div>
+        )}
+        {windowSize.innerWidth > 500 && (
+          <div>
+            <button type="button" onClick={(e) => handleNav(e, "ABOUT")}>
+              About
+            </button>
+            <button type="button" onClick={(e) => handleNav(e, "PROJECTS")}>
+              Projects
+            </button>
+            <button type="button" onClick={(e) => handleNav(e, "RESUME")}>
+              Resume
+            </button>
+            <button type="button" onClick={(e) => handleNav(e, "CONTACT")}>
+              Contact
+            </button>
+          </div>
+        )}
         <div className="header--button" onClick={(e) => handleClick(e)}>
           <img
             src={theme ? "/images/moon.png" : "/images/sun.png"}
