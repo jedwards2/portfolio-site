@@ -58,7 +58,7 @@ function Header({ main, switchMain, dropdown, setDropdown }) {
           </div>
         )}
         {windowSize.innerWidth > 500 && (
-          <div>
+          <div className="header-sub">
             <button type="button" onClick={(e) => handleNav(e, "ABOUT")}>
               About
             </button>
